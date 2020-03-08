@@ -57,7 +57,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
 /* HEADER */
 .main-header {
   background: lightblue;
@@ -68,6 +67,10 @@ body {
   max-width: 100%;
   margin: 0 auto;
   line-height: 80px;
+}
+
+.main-header .navbar .navbar-col-left .hamburger{
+  display: none;
 }
 
 .img-logo {
@@ -202,4 +205,148 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 380px;
+}
+
+/* SMART MOBILITY */
+#smart-mobility {
+  height: 320px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url('../img/scooter-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#smart-mobility .right-text{
+  text-align: right;
+  color: white;
+  height: 100%;
+}
+
+#smart-mobility .wrapper{
+  text-align: center;
+}
+
+#smart-mobility h1{
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-left: 42%;
+}
+
+#smart-mobility h5{
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 43%;
+}
+
+#smart-mobility .wrapper h5::after {
+  content: 'Learn More \003e';
+  padding-top: 10px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Section 2 logo */
+#double-logo{
+  height: 350px;
+  color: white;
+  text-align: center;
+}
+
+#double-logo .w-49{
+  width: 49%;
+}
+
+#double-logo h4{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+#double-logo h5{
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+#double-logo .left-logo{
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,85,115,1) 100%);
+  margin-right: 2%;
+}
+
+#double-logo .left-logo .wrapper{
+  height: 100%;
+  background-image: url('../img/helbiz-app.png');
+  background-size: cover;
+  background-position: 50% -70%;
+  background-repeat: no-repeat;
+}
+
+#double-logo .right-logo{
+  height: 100%;
+  background-image: url('../img/cities.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media all and (min-width: 890px) and (max-width: 1349px) {
+  #double-logo .left-logo{
+    float:none;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #double-logo .left-logo .wrapper{
+    background-image: none;
+  }
+
+  #double-logo .right-logo{
+    float:none;
+    height: 30%;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 889px){
+  .main-header .navbar .navbar-col-right{
+  display: none;
+  }
+
+  .main-header .navbar .navbar-col-left{
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-header .navbar .navbar-col-left .hamburger{
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    left: 95%;
+  }
+
+  #double-logo .left-logo{
+    float:none;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #double-logo .left-logo .wrapper{
+    background-image: none;
+  }
+
+  #double-logo .right-logo{
+    float:none;
+    height: 30%;
+    width: 100%;
+  }
+
+  #how-works .contents img{
+    display: none;
+  }
 }
